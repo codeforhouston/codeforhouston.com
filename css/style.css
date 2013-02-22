@@ -1,0 +1,60 @@
+#calendar {
+  width: 700px;
+  margin: 0 auto;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron {
+  margin: 60px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  margin: 0.2em;
+  padding: 0.6em;
+}
+
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.btn{
+  padding:0.25;
+}
+
+.btn-info {
+  background-color: #49afcd !important;
+} 
+
+.btn-info:hover {
+  background-color: #2f96b4 !important;
+}
+
+.img-polaroid {
+  text-align: 
+}
+
+#cal-header, #foot {
+  margin-top: -10px;
+  text-align: center;
+}
