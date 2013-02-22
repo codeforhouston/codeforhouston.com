@@ -6,67 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Gerald Rich, Bootstrap">
-
     <!-- Le styles -->
     <link href="http://codeforhouston.com/assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        margin: 0.2em;
-        padding: 0.6em;
-      }
-
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-      .btn{
-        padding:0.25;
-      }
-
-      .btn-info {
-        background-color: #49afcd !important;
-      } 
-    
-      .btn-info:hover {
-        background-color: #2f96b4 !important;
-      }
-
-      .img-polaroid{
-        text-align: 
-      }
-
-      #cal, #foot{
-        text-align: center;
-      }
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
+		<link rel='stylesheet' type='text/css' href='css/style.css' />
+		<link rel='stylesheet' type='text/css' href='css/fullcalendar.css' />
+		<link rel='stylesheet' type='text/css' href='css/fullcalendar.print.css' media='print' />
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -75,12 +19,19 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://codeforhouston.com/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://codeforhouston.com/assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://codeforhouston.com/assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="http://codeforhouston.com/assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="http://codeforhouston.com/assets/ico/favicon.png">
-  </head>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://codeforhouston.com/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://codeforhouston.com/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://codeforhouston.com/assets/ico/favicon.png">
 
-  <body>
+    <!-- Le magic -->
+		<script type='text/javascript' src='vendor/jquery-1.8.1.min.js'></script>
+		<script type='text/javascript' src='vendor/jquery-ui-1.8.23.custom.min.js'></script>
+		<script type='text/javascript' src='js/fullcalendar.min.js'></script>
+		<script type='text/javascript' src='js/gcal.js'></script>
+		<script type='text/javascript' src='js/calFeed.js'></script>
+</head>
+
+	<body>
 
     <div class="container-narrow">
 
@@ -128,13 +79,15 @@
         </div>
       </div>
 
-      <hr>
-      <h2 id="cal">The Big Calendar</h2>
-      <iframe src="http://www.google.com/calendar/embed?src=hello%40codeforhouston.com&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      <small id="foot"><a href="https://www.google.com/calendar/render" target="_blank">Download</a> this calendar or <a href="http://www.meetup.com/cfabrigade/Houston-TX/" target="_blank">RSVP</a> on Meetup.</small>
+			<hr>
+	      <h2 id="cal-header">The Big Calendar</h2>
+		      <div id='calendar'></div>
+		      <!--Download doesn't go anywhere right now... <small id="foot"><a href="https://www.google.com/calendar/render" target="_blank">Download</a> this calendar or <a href="http://www.meetup.com/cfabrigade/Houston-TX/" target="_blank">RSVP</a> on Meetup.</small>-->
+		      <br>
+      		<small id="foot">Add any item to your calendar or <a href="http://www.meetup.com/cfabrigade/Houston-TX/" target="_blank">RSVP</a> on Meetup!</small>
       <hr>
 
-      <div class="footer">
+			<div class="footer">
         <p>&copy; Code for Houston 2012.</p>
       </div>
 
@@ -142,7 +95,7 @@
 
     <!-- Le javascript
     ================================================== -->
-    <script src="http://codeforhouston.com/assets/js/jquery.js"></script>
+    <!--<script src="http://codeforhouston.com/assets/js/jquery.js"></script>-->
     <script src="http://codeforhouston.com/assets/js/bootstrap-transition.js"></script>
     <script src="http://codeforhouston.com/assets/js/bootstrap-alert.js"></script>
     <script src="http://codeforhouston.com/assets/js/bootstrap-modal.js"></script>
@@ -155,6 +108,6 @@
     <script src="http://codeforhouston.com/assets/js/bootstrap-collapse.js"></script>
     <script src="http://codeforhouston.com/assets/js/bootstrap-carousel.js"></script>
     <script src="http://codeforhouston.com/assets/js/bootstrap-typeahead.js"></script>
+	</body>
 
-  </body>
 </html>
